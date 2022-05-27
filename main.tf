@@ -16,7 +16,7 @@ data "ibm_pi_public_network" "dsnetwork" {
 }
 
 resource "ibm_pi_volume" "volume" {
-  pi_volume_size       = 20
+  pi_volume_size       = 90
   pi_volume_name       = var.volname
   pi_volume_type       = "tier1"
   pi_volume_shareable  = false
